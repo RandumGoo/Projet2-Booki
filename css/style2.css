@@ -1,4 +1,4 @@
-/****** General ***********/
+/****** General modif***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -64,28 +64,24 @@ height: 35px;
 gap: 68px;
 justify-content: space-between;
 align-items: flex-end;
-transition: opacity 0.3s ease;  
+transition: opacity 0.3s ease;
 
 }
 
 .box-heb {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-width: 113px;
-height: 35px;
-transition: opacity 0.3s ease;  
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+    border: 2px;
+    transition: 0.1s ease;
 }
 
-.box-act {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-width: 63px;
-height: 35px;
-transition: opacity 0.3s ease;  
+.box-act {    
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+    border: 2px;
+    transition: 0.1s ease;
 }
 
 
@@ -93,14 +89,17 @@ transition: opacity 0.3s ease;
     color:#0065FC;
     border-top: solid;
     border-color: #0065FC;
-  }
-
-  .box-act:hover {
+}
+.box-act:hover {
     color:#0065FC;
     border-top: solid;
     border-color: #0065FC;
-  }
-/** END OF HEADER**/ 
+}
+
+.box-filtre:hover {
+    background-color: #0065FC;
+    cursor: pointer;
+}/** END OF HEADER**/ 
 
 
 
@@ -113,79 +112,122 @@ transition: opacity 0.3s ease;
     width: 100%;
     gap: 35px;
 }
-.h1 {size: 22px;
-weight: 700;}
-.h2 {size: 16px;
-weight: 400;}
 
 .headline {
-width: 1,340px;
-height: 53px;
-gap: 8px;
-}
+    width: 1,340px;
+    height: 53px;
+    gap: 8px;
+    }
+
+.h1 {size: 22px;
+weight: 700;}
+
+
 
 /*** SEARCH BAR**/
-/*-------------------------CHANGES-------------------------*/
 
 
-.search-bar {                /*removed background color which was defined explicitly for search bar*/
+.search-bar{
+    display: flex;
+    margin-top: 25px;
+    height: 50px;
+}
+.titre-rech{
+    margin-bottom: 5px;
+}
+
+#icon-rech{
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-top-left-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
+}
+
+form > input{
+    height: 50px;
+    margin-left: 0;
+    border: 0.5px solid #f2f2f2;
+    padding-left: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+form > input::placeholder{
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+
+}
+
+.boutton-rech{
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #fff;
+  	border: 0;
+    border-top-right-radius: 15px 15px;
+  	border-bottom-right-radius: 15px 15px;
+    background-color: #0065FC;
+    cursor: pointer;
+}
+
+.boutton-rech-mob{
+    display: none;
+}
+
+/** FILTRE **/
+
+.filterbar{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.box-filtre {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 100%;
+    border: 2px solid #F2F2F2;
+    cursor: pointer;
+    margin: 20px 10px;
+}
+
+.box-filtre h5{
+    padding: 10px;
+    size: 17px;
+    weight: 700;
+}
+
+
+
+.box-filtre:hover{
+    background-color: #DEEBFF;
+    transition: 0.3s;
+}
+
+.info{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-width: 377px;
-height: 49px;
-gap: 24px;
-border-radius: 20px;
-margin-top: 20px; 
-/* background-color: #F2F2F2; */
 }
 
-
-
-.search-bar input[type="text"] {   /* changes the properties for input, as we have make the search bar transparent so that only the text is visible*/
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    outline: none;
-    border: none;
-    font-weight: bold;
-}
-
-
-
-.logo-posi {
-width: 50px;
-height: 49px;
-border: 1px, 0px, 0px, 0px;
-}
-
-.search-bar button{
-    justify-self: center;
-}
-
-.boutton {              /*changed properties for boutton class , removed padding as it was of no use also few more changes in properties*/
+.info i{
     display: flex;
     align-items: center;
-    justify-content: center; 
-    background-color: #0065FC;
-    width: 132px;
-    height: 49px;
-    border: 1px solid #0065FC; 
-    border-radius: 0 10px 10px 0; 
-    outline: none; 
+    justify-content: center;
+    color: #0065fc;
+    padding: 5px;
+    border-radius: 50%;
+    border: 0.1px solid #ccc;
+    width: 1em;
+    margin-right: 10px;
 }
-.boutton button {       /*changed propeties of button in boutton class*/ 
-    color: white; 
-    font-size: 14px;
-    background: none;  /*have set this to none just to show the text as button*/
-    border: none;       /*same for border*/
-    padding: 0;
-}
-
-
-/*-------------------------CHANGES TILL HERE------------------------*/
-
 
 .button {
     size: 18px;
@@ -196,7 +238,7 @@ border: 1px, 0px, 0px, 0px;
 
 /*** FILTRES ***/
 
-.filtres {
+/** .box-filtre {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -209,14 +251,11 @@ font-size: 17px;
 font-weight: 700;
 line-height: 19.96px;
 text-align: left;
-}
+} **/
 
 
-.titre {
-    
-}
 
-.boxes {
+/** .box-filtre {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -226,9 +265,9 @@ text-align: left;
     height: 50px;
     gap: 15px;
     
-}
+} **/
 
-.box-filtre {
+/**.box-filtre {
     width: 25%;
     height: 100%;
     background-color: #ffffff;
@@ -240,7 +279,7 @@ text-align: left;
     align-items: center;
     font-size: 18px;
     font-weight: bold;
-}
+} */
 
 
 
@@ -308,6 +347,11 @@ a {
     justify-content: space-between;
 }
 
+.titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
@@ -326,11 +370,6 @@ a {
     justify-content: space-between;
 }
 
-.heb-titre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .heb-card1 .card {
     display: flex;
@@ -346,7 +385,7 @@ a {
 }
 
 .heb-card1 .card-content {
-    width: 67%;
+    width: 70%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -397,7 +436,7 @@ a {
 }
 
 .heb-card2 .card-content {
-    width: 67%;
+    width: 70%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -475,29 +514,44 @@ a {
 
 
 .activite {
-    width: 32%;
-}
+    
+width: 100%;
+max-width: 1340px;}
 
-.activite-title {
+.act-title{
     display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.act-container {
+    display: flex;
+    
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.activite-cards .card {
+.card-act {
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
+box-shadow: 0px 0px 20px lightgrey;
+border-radius: 20px;
+overflow: hidden;
+margin-right: 20px;
+height: 89%
 }
 
-.activite-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.card-act img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.activite-cards .card-content {
+.card-act .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.card-act .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -506,21 +560,45 @@ a {
     box-sizing: border-box;
 }
 
-.activite-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+
+/**** 
+#activites{
+    padding-top: 30px;
 }
 
-.activite-cards .card-subtitle {
+.mainContentActivites{
+    display: flex;
+}
+
+
+.premierBlocActivite,
+    box-shadow: 0px 0px 20px lightgrey;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.premierBlocActivite,{
+    margin-right: 20px;
+}
+
+.blocFigureLarge{
     margin: 0;
-}
-
-.activite-cards .card-rating {
-    margin-bottom: 5px;
+    height: 89%;
 }
 
 
+.imageActivite{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.textActivites{
+    padding-left: 1em;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: 800;
+}
 
 /*** END OF ACTIVITE ***/
 
@@ -534,16 +612,14 @@ a {
 /** FOOTER **/
 footer {
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-content: flex-end;    
+    align-items: flex-start;
     background-color: #F2F2F2;
-    padding: 20px;
-    width: Fill 1,340px;
-    height: 163px;
-}
+    margin-top: 50px;
+    padding: 20px;}
 
-footer .box1, 
-footer .box2, 
-footer .box3 {
+footer .box {
     float: left;
     width: 30%;
     margin-right: 3%;
@@ -555,17 +631,12 @@ footer .box3 {
 
 }
 
-footer .box1 h3,
-footer .box2 h3,
-footer .box3 h3 {
-    color: #333;
+footer .box h3 {    color: #333;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-footer .box1 h4,
-footer .box2 h4,
-footer .box3 h4 {
+footer .box h4 {
     color: #666;
     font-size: 14px;
     margin-bottom: 5px;
