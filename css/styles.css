@@ -190,9 +190,9 @@ form > input::placeholder{
     display: flex;
     padding: 15px;
     align-items: center;
-    height: 50px;
+    height: 15px;
     font-weight: bold;
-    border-radius: 100%;
+    border-radius: 50px;
     border: 2px solid #F2F2F2;
     cursor: pointer;
     margin: 20px 10px;
@@ -210,94 +210,15 @@ form > input::placeholder{
     background-color: #DEEBFF;
     transition: 0.3s;
 }
-
-.info{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.infobar {
+    margin-bottom: 30px;
 }
 
-.info i{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #0065fc;
-    padding: 5px;
-    border-radius: 50%;
-    border: 0.1px solid #ccc;
-    width: 1em;
-    margin-right: 10px;
-}
 
 .button {
     size: 18px;
     color: white;
-}/*** END***/
-
-
-
-/*** FILTRES ***/
-
-/** .box-filtre {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: space-between;
-    width: 65%;
-height: 50px;
-gap: 15px;
-font-size: 17px;
-font-weight: 700;
-line-height: 19.96px;
-text-align: left;
-} **/
-
-
-
-/** .box-filtre {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    width: 758px;
-    height: 50px;
-    gap: 15px;
-    
-} **/
-
-/**.box-filtre {
-    width: 25%;
-    height: 100%;
-    background-color: #ffffff;
-    border-radius: 25px;
-    border: 2px;
-    border-color: #a5a5a5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: bold;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /** END OF FILTRES ***/
 
@@ -375,14 +296,15 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
+    width: 30%;
 }
 
-.heb-card1 img {
+ .heb-card1 img {
     width: 100%;
-    height: 136px;
+    height: 130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
+} 
 
 .heb-card1 .card-content {
     width: 70%;
@@ -426,11 +348,12 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
+    width: 30%;
 }
 
 .heb-card2 img {
     width: 100%;
-    height: 136px;
+    height: 130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -509,97 +432,47 @@ a {
 
 
 
+/*** ACTIVITE ***/
+.activite{
+    padding-top: 30px;
 
-/*** ACTIVITES***/
-
-
-.activite {
-    
-width: 100%;
-max-width: 1340px;}
-
-.act-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;}
-
-.act-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
+
+.act-title {
+    padding-bottom: 30px;
+    padding-left: 30px;}
+
+.act-container{
+    display: flex;
+}
+
 
 .card-act {
-    display: flex;
-    flex-direction: column;
-box-shadow: 0px 0px 20px lightgrey;
-border-radius: 20px;
-overflow: hidden;
-margin-right: 20px;
-height: 89%
-}
-
-.card-act img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-act .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
-}
-.card-act .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-
-/**** 
-#activites{
-    padding-top: 30px;
-}
-
-.mainContentActivites{
-    display: flex;
-}
-
-
-.premierBlocActivite,
     box-shadow: 0px 0px 20px lightgrey;
     border-radius: 20px;
     overflow: hidden;
-}
-
-.premierBlocActivite,{
     margin-right: 20px;
+    margin-left: 20px;
+    height: 90%;
+    width: 100%;
 }
 
-.blocFigureLarge{
-    margin: 0;
-    height: 89%;
-}
 
-
-.imageActivite{
+.card-act img{
     width: 100%;
     height: 100%;
+    Width: 297.5px;
+    Height: 380px;
     object-fit: cover;
 }
 
-.textActivites{
+.card-title{
     padding-left: 1em;
     font-family: 'Raleway', sans-serif;
     color: black;
     font-weight: 800;
+    
 }
-
-/*** END OF ACTIVITE ***/
-
 
 
 
