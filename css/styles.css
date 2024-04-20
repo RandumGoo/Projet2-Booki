@@ -18,6 +18,8 @@ body {
     justify-content: center;
 }
 
+/*** modification***/
+
 /*** HEADER**/
 header {
     background: transparent;
@@ -177,14 +179,26 @@ form > input::placeholder{
 .boutton-rech-mob{
     display: none;
 }
+.button {
+    size: 18px;
+    color: white;
+}
 
 /** FILTRE **/
 
 .filterbar{
     display: flex;
-    margin-top: 20px;
+    justify-content: center;
+    
 }
 
+.titre-filtre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    weight: 700;
+    size: 18px;
+}
 
 .box-filtre {
     display: flex;
@@ -211,14 +225,31 @@ form > input::placeholder{
     transition: 0.3s;
 }
 .infobar {
+    display: flex;
     margin-bottom: 30px;
 }
 
-
-.button {
-    size: 18px;
-    color: white;
+.info-txt {
+    display: flex;
+    align-items: center;
 }
+
+.infobar i {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    height: 24px;
+    width: 24px;
+    
+    border-radius: 50px;
+    border: 1px solid #F2F2F2;
+    margin-right: 10px;
+    
+}
+
+
+
 
 /** END OF FILTRES ***/
 
