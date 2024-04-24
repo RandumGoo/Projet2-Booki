@@ -16,12 +16,12 @@
 
 <body>
     <div class="main-container">
-        <header>
+        <header class="header">
             <nav>
                 <div class="logo">
                     <img src="./images/logo/Booki.png" alt="Logo de l'agence">
                 </div>
-                
+            
                 <div class="menu">
                     <div class="bouttons">
                       <div class="box-heb">
@@ -34,10 +34,32 @@
                 </div>      
             </nav>
         </header>
+
+    
+        <!-- VERSION MOBILE  -->
+    <header class="headerMobile">
+            <nav>
+                <div class="logo-mob">
+                    <img src="./images/logo/Booki.png" alt="Logo de l'agence Booki">
+                </div>
+                <div class="menu-mob">
+                    <div class="bouttons-mob">
+                        <div class="box-heb-mob">
+                          <a href="#">Hébergements</a>
+                        </div>
+                        <div class="box-act-mob">
+                          <a href="#">Activités</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </header> 
+      
+
         <main>
             <article class="info-group">
                 <div class="headline">
-                    <h1 class="titre-rech">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p> En plein centre-ville ou en pleine nature</p>
                 </div>
 
@@ -45,7 +67,7 @@
                     <i id="icon-rech" class="fas fa-map-marker-alt fa-sm"></i>
                     <input type="search" placeholder="Marseille, France" />
                     <button class="boutton-rech" type="button">Rechercher</button>
-                    <button class="boutton-rech-mob" type="button">
+                    <button class="boutton-rech-mobile" type="button">
                       <i class="fas fa-search fa-sm"></i>
                     </button>
                   </form>
@@ -205,6 +227,8 @@
                     </div>
 
                 </section>
+
+                
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -308,24 +332,31 @@
 
 
         <footer>
-            <div class="box">
+            <div class="prop">
                 <h3> À propos</h3>
-                <h4> Fonctionnement du site</h4>
-                <h4> Conditions générales </h4>
-                <h4> Données et confidentialité </h4>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales </a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                  </ul>
             </div>
-            <div class="box">
+            <div class="heberg">
                 <h3> Nos hébergements</h3>
-                <h4> Charte qualité</h4>
-                <h4> Proposer votre hôtel</h4>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                  </ul>
             </div>
-            <div class="box">
+            <div class="assist">
                 <h3> Assistance</h3>
-                <h4> Centre d’aide</h4>
-                <h4> Nous contacter</h4>
+                <ul>
+                    <li><a href="#">Centre d’aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                  </ul>
             </div>
+            
         </footer>
     </div>
 </body>
-<!--modification-->
+<!-- added responsive -->
 </html>
