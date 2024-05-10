@@ -620,8 +620,11 @@ footer > div > ul {
     justify-content: space-between;
     list-style: none;
     text-align: center;
-}
-
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 .navMobile > ul > li {
     flex-grow: 1;
     padding-bottom: 10px;
@@ -661,10 +664,21 @@ footer > div > ul {
     background-color: #0065FC;
     cursor: pointer;
     margin-left: -10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   }
 
+
+
+  .headline {
+    padding: 20px;
+  }
+
+  .filterbar {
+    padding: 5px;
+    font-size: large;
+  }
   .box-filtre {
-    
+    font-size: large;
   }
 
 
