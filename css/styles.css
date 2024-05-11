@@ -674,16 +674,18 @@ footer > div > ul {
   }
 
   .filterbar {
-    padding: 5px;
     font-size: large;
+    margin: 20px;
   }
 
   .titre-filtre {
     display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  font-size: larger;
-  margin-left: 30px;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: larger;
+    margin: auto;
+    margin-left: auto;
+    margin-left: 20px;
   }
 
   .box-filtre {
