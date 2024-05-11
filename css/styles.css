@@ -657,14 +657,14 @@ footer > div > ul {
   .boutton-rech-mobile{
     display: block;
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
     border: 0;
     border-radius: 15px;
     background-color: #0065FC;
     cursor: pointer;
     margin-left: -10px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   }
 
 
@@ -677,8 +677,27 @@ footer > div > ul {
     padding: 5px;
     font-size: large;
   }
+
+  .titre-filtre {
+    display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: larger;
+  margin-left: 30px;
+  }
+
   .box-filtre {
     font-size: large;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    height: 17px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid #F2F2F2;
+    cursor: pointer;
+    margin: 20px 10px;
+    width: 32%;
   }
 
 
